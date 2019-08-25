@@ -1,0 +1,28 @@
+resolver: lts-13.30
+
+packages:
+- .
+- deps/tensorflow-haskell/tensorflow
+- deps/tensorflow-haskell/tensorflow-ops
+- deps/tensorflow-haskell/tensorflow-core-ops
+- deps/tensorflow-haskell/tensorflow-opgen
+- deps/tensorflow-haskell/tensorflow-proto
+- deps/tensorflow-haskell/tensorflow-logging
+- deps/tensorflow-haskell/tensorflow-records
+- deps/tensorflow-haskell/tensorflow-records-conduit
+- deps/tensorflow-haskell-deptyped
+
+extra-deps:
+- random-1.1
+- haskell-src-exts-1.21.0
+- snappy-0.2.0.2
+- snappy-framing-0.1.2
+- dimensions-2.0.0.0
+
+docker:
+  enable: true
+  auto-pull: false
+  image: "registry.gitlab.com/vilunov/tensorflow-haskell-example/environment:master"
+
+extra-lib-dirs:
+- "/usr/local/lib"

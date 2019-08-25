@@ -1,0 +1,8 @@
+[submodule "deps/tensorflow-haskell-deptyped"]
+	path = deps/tensorflow-haskell-deptyped
+	url = git@github.com:vilunov/tensorflow-haskell-deptyped.git
+	branch = master
+[submodule "deps/tensorflow-haskell"]
+	path = deps/tensorflow-haskell
+	url = git@github.com:vilunov/tensorflow-haskell.git
+	branch = master

@@ -1,0 +1,52 @@
+name:                tensorflow-haskell-example
+version:             0.1.0.0
+github:              "vilunov/tensorflow-haskell-example"
+license:             MIT
+author:              "Nikita Vilunov"
+maintainer:          "nikita@vilunov.me"
+copyright:           "2019 Nikita Vilunov"
+category:            "Machine Learning"
+
+extra-source-files:
+- README.md
+
+description:         Please see the README on GitHub at <https://github.com/vilunov/tensorflow-haskell-example#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- tensorflow == 0.2.*
+- tensorflow-ops == 0.2.*
+- tensorflow-logging == 0.2.*
+- tensorflow-proto == 0.2.*
+- bytestring
+- proto-lens
+- tensorflow-deptyped >= 0.0.1 && < 0.1
+- random >= 1.1 && < 2
+- containers == 0.6.*
+- array == 0.5.*
+- vector-sized >= 1.2 && < 1.3
+
+library:
+  source-dirs: src
+
+executables:
+  tensorflow-haskell-example-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - tensorflow-haskell-example
+
+tests:
+  tensorflow-haskell-example-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - tensorflow-haskell-example

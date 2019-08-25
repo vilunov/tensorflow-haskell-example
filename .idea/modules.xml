@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/deps/tensorflow-haskell/tensorflow/tensorflow.iml" filepath="$PROJECT_DIR$/deps/tensorflow-haskell/tensorflow/tensorflow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deps/tensorflow-haskell/tensorflow-core-ops/tensorflow-core-ops.iml" filepath="$PROJECT_DIR$/deps/tensorflow-haskell/tensorflow-core-ops/tensorflow-core-ops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deps/tensorflow-haskell-deptyped/tensorflow-deptyped.iml" filepath="$PROJECT_DIR$/deps/tensorflow-haskell-deptyped/tensorflow-deptyped.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tensorflow-haskell-example.iml" filepath="$PROJECT_DIR$/tensorflow-haskell-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deps/tensorflow-haskell/tensorflow-logging/tensorflow-logging.iml" filepath="$PROJECT_DIR$/deps/tensorflow-haskell/tensorflow-logging/tensorflow-logging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deps/tensorflow-haskell/tensorflow-opgen/tensorflow-opgen.iml" filepath="$PROJECT_DIR$/deps/tensorflow-haskell/tensorflow-opgen/tensorflow-opgen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deps/tensorflow-haskell/tensorflow-ops/tensorflow-ops.iml" filepath="$PROJECT_DIR$/deps/tensorflow-haskell/tensorflow-ops/tensorflow-ops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deps/tensorflow-haskell/tensorflow-proto/tensorflow-proto.iml" filepath="$PROJECT_DIR$/deps/tensorflow-haskell/tensorflow-proto/tensorflow-proto.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deps/tensorflow-haskell/tensorflow-records/tensorflow-records.iml" filepath="$PROJECT_DIR$/deps/tensorflow-haskell/tensorflow-records/tensorflow-records.iml" />
+      <module fileurl="file://$PROJECT_DIR$/deps/tensorflow-haskell/tensorflow-records-conduit/tensorflow-records-conduit.iml" filepath="$PROJECT_DIR$/deps/tensorflow-haskell/tensorflow-records-conduit/tensorflow-records-conduit.iml" />
+    </modules>
+  </component>
+</project>
