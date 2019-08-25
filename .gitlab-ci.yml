@@ -1,0 +1,17 @@
+stages:
+- prepare
+
+environment image:
+  stage: prepare
+  image: docker:latest
+  services:
+  - docker:dind
+  before_script:
+  - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
+  - docker info
+  script:
+  - docker build -t "$CI_REGISTRY_IMAGE/environment:$CI_COMMIT_REF_SLUG" docker/gpu
+  - docker push "$CI_REGISTRY_IMAGE/environment:$CI_COMMIT_REF_SLUG"
+  only:
+    changes:
+    - "docker/**/*"
