@@ -20,7 +20,7 @@ extra-deps:
 - dimensions-2.0.0.0
 
 docker:
-  enable: true
+  enable: false
   auto-pull: false
   image: "registry.gitlab.com/vilunov/tensorflow-haskell-example/environment:master"
 

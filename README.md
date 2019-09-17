@@ -24,7 +24,7 @@ Firstly, you will need to build the development image:
     docker build -t registry.gitlab.com/vilunov/tensorflow-haskell-example/environment:master docker/gpu
 
 The `stack.yaml` is already configured to use this Docker image. You can invoke
-all Stack commands on your machine.
+all Stack commands on your machine with the flag `--docker`.
 
 #### Using Stack in Docker
 
@@ -32,4 +32,6 @@ TODO
 
 #### Using Stack on host machine
 
-TODO
+You will need to install TensorFlow, the process and the package name differs by the OS.
+
+**Arch Linux**: `sudo pacman -S tensorflow[-cuda]` 

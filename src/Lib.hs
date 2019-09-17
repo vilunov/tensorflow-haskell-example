@@ -46,9 +46,9 @@ data Model (n :: Nat) = Model {
 model :: TF.Build (Model 100)
 model = do
   -- Prediction
-  (inputs :: Placeholder "X" '[100] Float) <- placeholder
-  (slope :: Parameter '[1]) <- initializedVariable 0
-  (intercept :: Parameter '[1]) <- initializedVariable 0
+  inputs :: Placeholder "X" '[100] Float <- placeholder
+  slope :: Parameter '[1] <- initializedVariable 0
+  intercept :: Parameter '[1] <- initializedVariable 0
   let predictions = (inputs `mul` readValue slope) `add` readValue intercept
   predict <- render predictions
 
@@ -58,7 +58,7 @@ model = do
       runWithFeeds feeds predict
 
   -- Training
-  (outputs :: Placeholder "Y" '[100] Float) <- placeholder
+  outputs :: Placeholder "Y" '[100] Float <- placeholder
   let
     loss = square (predictions `sub` outputs)
     params = [unVariable slope, unVariable intercept]
