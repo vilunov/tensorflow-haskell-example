@@ -23,6 +23,3 @@ docker:
   enable: false
   auto-pull: false
   image: "registry.gitlab.com/vilunov/tensorflow-haskell-example/environment:master"
-
-extra-lib-dirs:
-- "/usr/local/lib"
